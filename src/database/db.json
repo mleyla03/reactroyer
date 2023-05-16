@@ -4,31 +4,35 @@
       "id": 1,
       "name": "Edis",
       "surname": "Gungoren",
-      "salary": "2500",
+      "salary": 2500,
       "position": "Singer",
+      "age": 32,
       "url": "https://m.media-amazon.com/images/M/MV5BMTBhMmI0Y2ItNjllYy00YjY1LTg5YzMtNDE3N2MzMDkxNTI2XkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_.jpg"
     },
     {
       "id": 2,
       "name": "Murat",
       "surname": "Boz",
-      "salary": "2500",
+      "salary": 2100,
       "position": "Singer",
+      "age": 43,
       "url": "https://i.scdn.co/image/ab6761610000e5eb922126f82b6c57ce89187024"
     },
     {
       "id": 3,
       "name": "Shawn",
       "surname": "Mendes",
-      "salary": "3000",
+      "salary": 2000,
       "position": "Singer",
+      "age": 24,
       "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Shawn_Mendes_takes_a_lie_detector_test.jpg"
     },
     {
       "name": "Murat",
       "surname": "Dalkilic",
       "position": "Singer",
-      "salary": "3500",
+      "salary": 1900,
+      "age": 39,
       "url": "https://tr.web.img4.acsta.net/pictures/15/01/13/14/27/213990.jpg",
       "id": "E1EGagkZGeWRrZEg7-aGX"
     }

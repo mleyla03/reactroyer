@@ -69,6 +69,17 @@ function Employe() {
           ellipsis: true,
         },
         {
+          title: 'Age',
+          dataIndex: "age",
+          key: "salary",
+       
+          filteredValue: filteredInfo.address || null,
+          onFilter: (value, record) => record.age.includes(value),
+          sorter: (a, b) => a.age > b.age,
+          sortOrder: sortedInfo.columnKey === "age" ? sortedInfo.order : null,
+          ellipsis: true,
+        },
+        {
             title: 'Salary',
             dataIndex: "salary",
             key: "salary",
@@ -79,6 +90,7 @@ function Employe() {
             sortOrder: sortedInfo.columnKey === "salary" ? sortedInfo.order : null,
             ellipsis: true,
           },
+
           {
             title: 'Postion',
             dataIndex: "position",
@@ -86,7 +98,7 @@ function Employe() {
          
             filteredValue: filteredInfo.address || null,
             onFilter: (value, record) => record.postion.includes(value),
-            sorter: (a, b) => a.postion > b.postion,
+            sorter: (a, b) => a.position > b.position,
             sortOrder: sortedInfo.columnKey === "position" ? sortedInfo.order : null,
             ellipsis: true,
           }

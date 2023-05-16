@@ -36,8 +36,8 @@ function Employes() {
       <Grid container spacing={2} columns={12}>
       {products && products.map((product)=>{
           return   <Grid item lg={4} md={6} sm={12} xs={12}>
-            <Link to={`${product.id}`}>
-            <Item style={{marginTop:"30px"}} key={product.id}><img style={{width:"300px", height:"300px"}} src={product.url}></img> <h3 style={{textAlign:"left"}}>{product.name}</h3><p style={{textAlign:"left"}}>Position:{product.position}</p><p style={{textAlign:"left"}}>Salary:{product.salary}</p> <p style={{display:"flex",alignItems:"center", justifyContent:"flex-end"}}><div style={{height:"50px",width:"50px",color:"white",display:"flex",alignItems:"center",justiftyContent:"center"}}><HeartOutlined style={{backgroundColor:"orangered",height:"50px",width:"50px",color:"white",display:"flex",alignItems:"center",justifyContent:"center", borderRadius:"20px"}}/></div></p></Item>
+            <Link style={{textDecoration:"none"}} to={`${product.id}`}>
+            <Item style={{marginTop:"30px"}} key={product.id}><img style={{width:"300px", height:"300px"}} src={product.url}></img> <h3 style={{textAlign:"left"}}>{product.name}</h3><p style={{textAlign:"left"}}>{product.age}</p><p style={{textAlign:"left"}}>Position:{product.position}</p><p style={{textAlign:"left"}}>Salary:{product.salary}</p> <p style={{display:"flex",alignItems:"center", justifyContent:"flex-end"}}><div style={{height:"50px",width:"50px",color:"white",display:"flex",alignItems:"center",justiftyContent:"center"}}><HeartOutlined  style={{backgroundColor:"orangered",height:"50px",width:"50px",color:"white",display:"flex",alignItems:"center",justifyContent:"center", borderRadius:"20px"}}/></div></p></Item>
             </Link>
          
 

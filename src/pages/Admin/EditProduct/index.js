@@ -22,7 +22,9 @@ const EditProduct = () => {
       surname:"",
       position:"",
       salary:"",
-      url:""
+      url:"",
+      age:""
+
     },
     onSubmit:handleSubmit,
     validationSchema:BasicFormSchema,
@@ -47,6 +49,11 @@ const EditProduct = () => {
         )}   
       <input  style={{marginLeft:"5px"}}value={formik.values.url} onChange={formik.handleChange} placeholder='people image'name='url'/>
       <input  style={{marginLeft:"5px", borderColor: `${
+              formik.errors.surname && formik.touched.surname
+                ? "red"
+                : "black"
+            }`}}value={formik.values.age} onChange={formik.handleChange} placeholder='people age'name='age' type='number'/>
+      <input  style={{marginLeft:"5px", borderColor: `${
               formik.errors.salary && formik.touched.salary
                 ? "red"
                 : "black"
@@ -59,6 +66,7 @@ const EditProduct = () => {
             <option value='az'>Developer</option>
             <option value='tr'>Designer</option>
             <option value='ru'>Supervisor</option>
+            <option value='rf'>Manager</option>
             <option value='ch'>Engineer</option>
         </select>
         {formik.errors.position && formik.touched.position && (
